@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medicine Availability - MediStock</title>
+  <style>
+    body { font-family: Arial; margin: 0; color: #222; }
+    header { background: #1769aa; color: white; padding: 15px; }
+    header h2 { display: inline; margin-right: 35px; }
+    nav { display: inline; }
+    nav a { color: white; text-decoration: none; margin-right: 15px; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 25px; }
+    h1, h2 { color: #1769aa; }
+    .stores { display: flex; flex-wrap: wrap; gap: 18px; }
+    .store { border: 1px solid #aaa; padding: 15px; flex: 1 1 430px; }
+    .store h2 { margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { border: 1px solid #aaa; padding: 8px; text-align: left; }
+    th { background: #e7f1f8; }
+    .available { color: green; font-weight: bold; }
+    .limited { color: orange; font-weight: bold; }
+    .out { color: red; font-weight: bold; }
+    footer { background: #1769aa; color: white; text-align: center; padding: 15px; margin-top: 25px; }
+    @media (max-width: 600px) { header h2, nav { display: block; margin-bottom: 12px; } main { padding: 15px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>MediStock</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="medicines.html">Medicines</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Medicine Availability</h1>
+    <p>Check which medical store has the medicine you need.</p>
+    <h2>Find Your Medicine</h2>
+    <div class="stores">
+      <div class="store">
+        <h2>MediCare Medical Store</h2><p>Location: Nanded Main Road</p>
+        <table><tr><th>Medicine</th><th>Stock</th><th>Availability</th></tr>
+          <tr><td>Paracetamol 500mg</td><td>48 strips</td><td class="available">Available</td></tr>
+          <tr><td>Cetirizine 10mg</td><td>25 strips</td><td class="available">Available</td></tr>
+          <tr><td>Pantoprazole 40mg</td><td>18 strips</td><td class="available">Available</td></tr>
+          <tr><td>Azithromycin 500mg</td><td>6 strips</td><td class="limited">Limited</td></tr>
+          <tr><td>ORS Sachets</td><td>0</td><td class="out">Out of Stock</td></tr>
+        </table>
+      </div>
+      <div class="store">
+        <h2>Apollo Medicals</h2><p>Location: Shivaji Nagar</p>
+        <table><tr><th>Medicine</th><th>Stock</th><th>Availability</th></tr>
+          <tr><td>Paracetamol 500mg</td><td>20 strips</td><td class="available">Available</td></tr>
+          <tr><td>Cetirizine 10mg</td><td>0</td><td class="out">Out of Stock</td></tr>
+          <tr><td>Pantoprazole 40mg</td><td>32 strips</td><td class="available">Available</td></tr>
+          <tr><td>Azithromycin 500mg</td><td>15 strips</td><td class="available">Available</td></tr>
+          <tr><td>ORS Sachets</td><td>18 sachets</td><td class="available">Available</td></tr>
+        </table>
+      </div>
+      <div class="store">
+        <h2>LifeLine Medical Store</h2><p>Location: CIDCO</p>
+        <table><tr><th>Medicine</th><th>Stock</th><th>Availability</th></tr>
+          <tr><td>Paracetamol 500mg</td><td>8 strips</td><td class="limited">Limited</td></tr>
+          <tr><td>Cetirizine 10mg</td><td>30 strips</td><td class="available">Available</td></tr>
+          <tr><td>Pantoprazole 40mg</td><td>0</td><td class="out">Out of Stock</td></tr>
+          <tr><td>Azithromycin 500mg</td><td>4 strips</td><td class="limited">Limited</td></tr>
+          <tr><td>ORS Sachets</td><td>25 sachets</td><td class="available">Available</td></tr>
+        </table>
+      </div>
+      <div class="store">
+        <h2>HealthPlus Medicals</h2><p>Location: Vazirabad</p>
+        <table><tr><th>Medicine</th><th>Stock</th><th>Availability</th></tr>
+          <tr><td>Paracetamol 500mg</td><td>35 strips</td><td class="available">Available</td></tr>
+          <tr><td>Cetirizine 10mg</td><td>12 strips</td><td class="limited">Limited</td></tr>
+          <tr><td>Pantoprazole 40mg</td><td>20 strips</td><td class="available">Available</td></tr>
+          <tr><td>Azithromycin 500mg</td><td>0</td><td class="out">Out of Stock</td></tr>
+          <tr><td>ORS Sachets</td><td>5 sachets</td><td class="limited">Limited</td></tr>
+        </table>
+      </div>
+    </div>
+  </main>
+  <footer>MediStock © 2026</footer>
+</body>
+</html>

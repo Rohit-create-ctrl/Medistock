@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MediStock Login</title>
+  <style>
+    body { font-family: Arial; margin: 0; color: #222; }
+    header { background: #1769aa; color: white; padding: 15px; }
+    header h2 { display: inline; margin-right: 35px; }
+    nav { display: inline; }
+    nav a { color: white; text-decoration: none; margin-right: 15px; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 50px 20px; width: 330px; margin: auto; }
+    .login { border: 1px solid #aaa; padding: 25px; }
+    h1 { color: #1769aa; }
+    label { display: block; margin-top: 12px; }
+    input { width: 100%; padding: 9px; box-sizing: border-box; margin-top: 5px; }
+    button { background: #1769aa; color: white; border: 0; padding: 10px 25px; margin-top: 18px; }
+    button:hover { background: #0d4f80; }
+    a { color: #1769aa; }
+    footer { background: #1769aa; color: white; text-align: center; padding: 15px; margin-top: 25px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>MediStock</h2>
+    <nav><a href="index.html">Home</a><a href="medicines.html">Medicines</a><a href="about.html">About</a><a href="login.html">Login</a></nav>
+  </header>
+  <main>
+    <div class="login">
+      <h1>MediStock Login</h1>
+      <p>Login to check medicine availability at medical stores.</p>
+      <form action="#" method="post">
+        <label for="username">Username</label>
+        <input id="username" type="text" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>New user? <a href="#">Register here</a></p>
+    </div>
+  </main>
+  <footer>MediStock © 2026</footer>
+</body>
+</html>

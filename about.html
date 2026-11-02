@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About MediStock</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      color: #222;
+    }
+
+    header {
+      background: #1769aa;
+      color: white;
+      padding: 15px;
+    }
+
+    header h2 {
+      display: inline;
+      margin-right: 35px;
+    }
+
+    nav {
+      display: inline;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 35px;
+      max-width: 850px;
+    }
+
+    h1,
+    h2 {
+      color: #1769aa;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    .steps {
+      border-left: 2px solid #1769aa;
+      padding-left: 20px;
+    }
+
+    .benefits {
+      display: flex;
+      gap: 15px;
+    }
+
+    .benefit {
+      border: 1px solid #aaa;
+      padding: 15px;
+      flex: 1;
+    }
+
+    footer {
+      background: #1769aa;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+
+      header h2,
+      nav {
+        display: block;
+        margin-bottom: 12px;
+      }
+
+      .benefits {
+        display: block;
+      }
+
+      .benefit {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>MediStock</h2>
+    <nav><a href="index.html">Home</a><a href="medicines.html">Medicines</a><a href="about.html">About</a><a
+        href="login.html">Login</a></nav>
+  </header>
+  <main>
+    <h1>About MediStock</h1>
+    <p>MediStock is a college project developed to help users check the availability of medicines at nearby medical
+      stores. Instead of visiting different stores to find a medicine, users can check the available stock through the
+      system.</p>
+    <h2>How It Works</h2>
+    <div class="steps">
+      <p>1. Select Medicine</p>
+      <p>↓</p>
+      <p>2. Check Medical Store</p>
+      <p>↓</p>
+      <p>3. View Available Stock</p>
+      <p>↓</p>
+      <p>4. Visit the Store</p>
+    </div>
+    <h2>Benefits</h2>
+    <div class="benefits">
+      <div class="benefit">Saves time</div>
+      <div class="benefit">Easy to check stock</div>
+      <div class="benefit">Shows multiple medical stores</div>
+      <div class="benefit">Helps users find medicines faster</div>
+    </div>
+  </main>
+  <footer>MediStock © 2026</footer>
+</body>
+
+</html>

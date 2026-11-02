@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MediStock - Home</title>
+  <style>
+    body { font-family: Arial; margin: 0; color: #222; }
+    header { background: #1769aa; color: white; padding: 15px; }
+    header h2 { display: inline; margin-right: 35px; }
+    nav { display: inline; }
+    nav a { color: white; text-decoration: none; margin-right: 15px; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 35px; }
+    h1, h2 { color: #1769aa; }
+    .intro { max-width: 700px; }
+    .button { background: #1769aa; color: white; padding: 10px 15px; text-decoration: none; display: inline-block; }
+    .button:hover { background: #0d4f80; }
+    .reasons { display: flex; gap: 15px; margin-top: 15px; }
+    .reason { border: 1px solid #bbb; padding: 15px; flex: 1; }
+    footer { background: #1769aa; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+    @media (max-width: 600px) { header h2, nav { display: block; margin-bottom: 12px; } .reasons { display: block; } .reason { margin-bottom: 10px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>MediStock</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="medicines.html">Medicines</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>Nearby Medicine Availability System</h1>
+      <p>MediStock helps users find required medicines and check their availability at nearby medical stores before visiting.</p>
+      <a class="button" href="medicines.html">Check Medicines</a>
+    </div>
+    <h2>Why MediStock?</h2>
+    <div class="reasons">
+      <div class="reason">Check medicine availability</div>
+      <div class="reason">Compare stock at different medical stores</div>
+      <div class="reason">Save time searching for medicines</div>
+    </div>
+  </main>
+  <footer>MediStock © 2026</footer>
+</body>
+</html>
